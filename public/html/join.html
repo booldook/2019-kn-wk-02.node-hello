@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <title>회원가입</title>
+</head>
+<body>
+  <div class="container">
+    <div class="jumbotron">회원가입</div>
+    <form action="/join-save" method="post">
+      <table class="table">
+        <tbody>
+          <tr>
+            <td>아이디</td>
+            <td>
+              <input type="text" class="form-control" name="userid">
+            </td>
+          </tr>
+          <tr>
+            <td>이름</td>
+            <td>
+              <input type="text" class="form-control" name="username">
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2">
+              <button class="btn btn-primary">확인</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </form>
+  </div>
+</body>
+</html>
