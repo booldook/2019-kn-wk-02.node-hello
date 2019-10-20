@@ -10,6 +10,4 @@ const isoDate = (d) => {
   var sec = zp(d.getSeconds());
   return year+'-'+month+'-'+day+' '+hour+':'+min+':'+sec; //2019-10-20 15:23:09
 }
-module.exports = {
-  zp, isoDate
-}
+module.exports = {zp, isoDate}
