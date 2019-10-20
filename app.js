@@ -1,5 +1,9 @@
 const express = require("express");
+const bodyParser = require("body-parser");
 const app = express();
+
+// 사용자 지정 모듈
+const util = require("./modules/util");
 
 // 서버 실행
 app.listen(3000, function(){
@@ -8,6 +12,7 @@ app.listen(3000, function(){
 
 // 정적 Route
 app.use("/", express.static("./public"));
+app.use(bodyParser.urlencoded({extended: false}));
 
 // Router-GET
 app.get("/hello", function (req, res) {
@@ -34,5 +39,9 @@ app.get(["/book", "/book/:id"], (req, res) => {
 
 // Route-POST
 app.post("/join-save", (req, res) => {
-  res.send("저장!");
+  var userid = req.body.userid;
+  var username = req.body.username;
+  var wdate = new Date();
+  res.send(userid + "(" + username + ")" + util.isoDate(wdate));
 });
+
