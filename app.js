@@ -31,3 +31,8 @@ app.get(["/book", "/book/:id"], (req, res) => {
   <h3>${books[id].desc}</h3>
   `);
 });
+
+// Route-POST
+app.post("/join-save", (req, res) => {
+  res.send("저장!");
+});
