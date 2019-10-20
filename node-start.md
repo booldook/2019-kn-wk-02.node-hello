@@ -29,8 +29,8 @@ express --view=pug 03.sample
 ~~~
 ### 나. bin/www 파일을 열고
 ~~~js
-server.listen(post);
-server.listen(post, function(){
+server.listen(port);
+server.listen(port, function(){
   console.log(`http://127.0.0.1:${port}`);
 });
 ~~~
