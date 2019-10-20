@@ -42,6 +42,7 @@ app.post("/join-save", (req, res) => {
   var userid = req.body.userid;
   var username = req.body.username;
   var wdate = new Date();
-  res.send(userid + "(" + username + ")" + util.isoDate(wdate));
+  // res.send(userid + "(" + username + ")" + util.isoDate(wdate));
+  res.send(`${userid} (${username}) ${util.isoDate(wdate)}`);
 });
 
