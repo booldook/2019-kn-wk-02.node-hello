@@ -18,6 +18,6 @@
   },
   "homepage": "https://github.com/booldook/2019-kn-wk-02.node-hello#readme",
   "dependencies": {
-    "express": "^4.17.1"
+    "express": "^4.18.2"
   }
 }
